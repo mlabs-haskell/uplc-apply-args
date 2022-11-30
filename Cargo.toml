@@ -1,6 +1,6 @@
 [package]
 name = "uplc"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["zmrocze <karol@mlabs.city>"]
 edition = "2018"
 
@@ -13,6 +13,7 @@ default = ["console_error_panic_hook"]
 [dependencies]
 wasm-bindgen = "0.2.63"
 uplc = "0.0.25"
+pallas-primitives = "0.14.0"
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
