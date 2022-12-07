@@ -40,11 +40,15 @@ pub fn apply_params_to_script_with_errors(
     let mut buffer = Vec::new();
     let mut program = Program::<DeBruijn>::from_cbor(plutus_script_bytes, &mut buffer)
         .map_err(|e| e.to_string())?;
+    
+    println!("params: {:?}", params);
+    println!("program: {:?}", program);
 
     for param in params {
         program = program.apply_data(param);
     }
-
+    println!("applied program: {:?}", program);
+    
     match program.to_cbor() {
         Ok(res) => Ok(res),
         Err(_) => Err("Couldn't encode resulting script as CBOR.".to_string()),
