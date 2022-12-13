@@ -14,7 +14,7 @@ use pallas_primitives::{Fragment};
 /// 
 /// This is re-implementation of uplc::apply_params_to_script that doesn't panic on decoding errors.
 #[wasm_bindgen]
-pub fn apply_params_to_script_with_errors(
+pub fn apply_params_to_script_no_panic(
     params_bytes: &[u8], // PlutusData array
     plutus_script_bytes: &[u8],
 ) -> Result<Vec<u8>, String> {
