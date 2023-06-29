@@ -1,6 +1,6 @@
 [package]
-name = "uplc"
-version = "0.1.6"
+name = "apply-args-browser"
+version = "0.0.1"
 authors = ["zmrocze <karol@mlabs.city>"]
 edition = "2018"
 
