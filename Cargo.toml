@@ -12,9 +12,10 @@ default = ["console_error_panic_hook"]
 
 [dependencies]
 wasm-bindgen = "0.2.63"
-uplc = { git = "https://github.com/zmrocze/aiken", rev = "b28ead25eb3d8ba758d4b8abb2f15f3b00b382a7" }
-pallas-primitives = { git = "https://github.com/txpipe/pallas", rev = "50b9dc47028001d5790a3b283ca4cbe9dc98f100" }
-pallas-codec = { git = "https://github.com/txpipe/pallas", rev = "50b9dc47028001d5790a3b283ca4cbe9dc98f100" }
+uplc = "1.0.19-alpha"
+pallas-primitives = "0.18.0"
+pallas-codec = "0.18.0"
+getrandom = {  features = ["js"] }
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
