@@ -13,3 +13,4 @@ Here's a description on to how publish a newer version to the NPM registry:
 3. Bump the `package.version` in `Cargo.toml`.
 4. Run `wasm-pack build --target [bundler|nodejs]`.
 5. Run `wasm-pack publish --target [bundler|nodejs]`. You may need to login to the registry you want to publish to. You can login using `wasm-pack login`.
+6. Re-publish the NPM meta-package (located in `./npm-package`)
