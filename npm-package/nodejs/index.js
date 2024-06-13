@@ -1,1 +1,1 @@
-export * from "apply-args-nodejs";
+export * from "@mlabs-haskell/uplc-apply-args-nodejs";

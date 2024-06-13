@@ -1,1 +1,1 @@
-export * from "apply-args-browser";
+export * from "@mlabs-haskell/uplc-apply-args-browser";
