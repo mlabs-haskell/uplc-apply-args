@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@mlabs-haskell/uplc-apply-args",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Implementation of argument application for Cardano Plutus scripts (nodejs & the browser)",
   "main": "./nodejs/index.js",
   "browser": "./browser/index.js",
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/mlabs-haskell/uplc-apply-args#readme",
   "dependencies": {
-    "apply-args-browser": "^0.0.1",
-    "apply-args-nodejs": "^0.0.1"
+    "@mlabs-haskell/uplc-apply-args-browser": "^0.0.3",
+    "@mlabs-haskell/uplc-apply-args-nodejs": "^0.0.3"
   }
 }
